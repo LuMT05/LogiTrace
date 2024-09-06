@@ -1,0 +1,54 @@
+/* Estilos para el elemento "body". */
+body {
+    margin: 0; /* Establece el margen exterior del cuerpo a 0, eliminando espacios en blanco. */
+    padding: 0; /* Establece el relleno del cuerpo a 0, eliminando espacios internos. */
+    font-family: 'Times New Roman', Times, serif; /* Define la fuente de texto para el cuerpo. */
+    background-color: rgb(87, 87, 86); /* Establece el color de fondo con un valor RGB. */
+}
+
+/* Estilos para el formulario con la clase ".form". */
+.form {
+    background: rgb(255 200 62); /* Define un color de fondo con un valor RGB para el formulario. */
+    padding: 20px; /* Agrega un relleno interior de 20 píxeles alrededor del formulario. */
+    border-radius: 15px; /* Aplica un borde redondeado al formulario con un radio de 15 píxeles. */
+    margin: 20px auto; /* Establece márgenes de 20 píxeles en la parte superior e inferior y se ajusta automáticamente en los lados para centrar el formulario. */
+    max-width: 400px; /* Establece el ancho máximo del formulario en 400 píxeles. */
+}
+
+/* Estilos para las etiquetas "<label>". */
+label {
+    font-weight: bold; /* Establece la negrita en las etiquetas. */
+    display: block; /* Hace que las etiquetas se muestren como bloques, una debajo de la otra. */
+    margin-top: 30px; /* Agrega un margen en la parte superior de 30 píxeles entre las etiquetas. */
+}
+
+/* Estilos para campos de entrada "<input>" y elementos "<select>". */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 90%; /* Establece el ancho de los campos de entrada en un 90% del contenedor. */
+    padding: 10px; /* Agrega un relleno interior de 10 píxeles a los campos de entrada y a los elementos select. */
+    border: 1px solid #ccc; /* Agrega un borde de 1 píxel sólido con un color gris claro (#ccc). */
+    border-radius: 5px; /* Aplica un borde redondeado a los campos de entrada y elementos select con un radio de 5 píxeles. */
+    margin-top: 5px; /* Agrega un margen en la parte superior de 5 píxeles entre los campos de entrada y los elementos select. */
+}
+
+/* Estilos para el botón con la clase ".btn". */
+.btn {
+    background-color: #000000; /* Establece el color de fondo del botón en verde (#008000). */
+    color: rgb(240, 240, 240); /* Establece el color del texto en blanco. */
+    border: none; /* Elimina el borde del botón. */
+    padding: 10px 20px; /* Agrega un relleno interior de 10 píxeles en la parte superior e inferior y 20 píxeles en los lados. */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón. */
+    font-size: 16px; /* Establece el tamaño de fuente en 16 píxeles. */
+    border-radius: 5px; /* Aplica un borde redondeado al botón con un radio de 5 píxeles. */
+    margin-top: 10px; /* Agrega un margen en la parte superior de 10 píxeles. */
+}
+
+/* Estilos para el botón con la clase ".btn.dark" cuando está en estado "hover". */
+.btn.dark:hover {
+    background-color: rgb(220, 220, 220); /* Cambia el color de fondo a verde oscuro (#006400) al pasar el cursor sobre el botón con la clase ".dark". */
+    color: rgb(0, 0, 0);
+}

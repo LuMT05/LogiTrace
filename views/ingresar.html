@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head lang="es" xml:lang="es">
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="icon" type="image/png" href="../assets/img/LOGO1.PNG">
+        <link rel="stylesheet" type="text/css" href="../assets/styles/ingresar.css">
+        <link rel="stylesheet" type="text/css" href="../assets/styles/barra1.css">
+        <title>PROYECTO</title>
+    </head>
+<body>
+    <header class="header">
+        <div>
+            <div class="container">
+                <a href=""><img src="../assets/img/escudo1.png" type="image/png"></a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="formulario">
+        <img class="LOGO1-login" src="../assets/img/LOGO11.png">
+        <h1>Iniciar sesion</h1>
+        <form action="../controllers/usuarios/dbLogin.php" method="post" accept-charset="utf-8"> <!--El metodo post es para enviar información -->
+            <div class="username">
+                <input type="text" name="input_usuario" placeholder="Usuario" required>
+            </div>
+            
+            <div class="contraseña">
+                <input type="password" name="input_contraseña" placeholder="Contraseña" required>
+            </div>
+
+            <div class="ingresar">
+                <div class="btnCont"><button type="submit" class="btn dark">Enviar</button> </div>
+            </div>
+
+            <div class="Registrar">
+                ¿Aún no tienes cuenta? <a href="registrar.html">Registrar</a>
+            </div>
+        </form>
+    </div>
+</body>
+<footer>
+</footer>
+</html>

@@ -1,0 +1,60 @@
+/* Estilos para una tabla HTML. */
+table {
+    width: 100%; /* La tabla ocupa el 100% del ancho disponible. */
+    text-align: left; /* El texto dentro de la tabla se alinea a la izquierda. */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas para evitar espacios adicionales. */
+    margin: 0 0 1em 0; /* Establece un margen en la parte superior de 0, en la parte derecha 0, en la parte inferior 1em (unidad de medida), y en la parte izquierda 0. */
+    caption-side: top; /* Coloca el título de la tabla (caption) en la parte superior. */
+}
+
+/* Estilos para el título de la tabla, celdas de datos y encabezados de columna. */
+caption, td, th {
+    padding: 0.3em; /* Agrega relleno interior de 0.3em (unidad de medida) a las celdas. */
+}
+
+/* Estilos para las celdas de datos y los encabezados de columna. */
+th, td {
+    border-bottom: 1px solid rgb(87, 87, 86); /* Agrega un borde inferior de 1 píxel sólido con color negro (#000) a las celdas. */
+    border-right: 1px solid rgb(87, 87, 86); /* Agrega un borde derecho de 1 píxel sólido con color negro (#000) a las celdas. */
+}
+
+/* Estilos para la última celda de datos y el último encabezado de columna. */
+th.last, td.last {
+    border-right: 0; /* Elimina el borde derecho de la última celda de datos y el último encabezado de columna. */
+}
+
+/* Estilos para los encabezados de pie de tabla (tfoot). */
+tfoot th, tfoot td {
+    border-bottom: 0; /* Elimina el borde inferior de las celdas en el encabezado de pie de tabla (tfoot). */
+    text-align: center; /* Centra el texto en las celdas del encabezado de pie de tabla. */
+}
+
+/* Estilos para los encabezados de columna (th). */
+th {
+    width: 25%; /* Establece un ancho del 25% para los encabezados de columna. */
+    background-color: rgb(255, 255, 255);
+}
+
+/* Estilos para los encabezados de columna en el encabezado de tabla (thead). */
+thead th {
+    background-color: rgb(255 200 62); /* Establece un color de fondo de cadetblue para los encabezados de columna en el encabezado de tabla. */
+    color: rgb(87, 87, 86); /* Establece el color del texto en aliceblue (un tono de blanco) en los encabezados de columna. */
+}
+
+/* Estilos para elementos con la clase "general-table-edit". */
+.general-table-edit {
+    background-color: #009688; /* Establece un color de fondo de verde oscuro (#009688). */
+    padding: 6px; /* Agrega un relleno interior de 6 píxeles a los elementos. */
+    color: #fff; /* Establece el color del texto en blanco. */
+    text-align: center; /* Centra el texto en los elementos. */
+    font-weight: bold; /* Establece el peso de fuente en negrita. */
+}
+
+/* Estilos para elementos con la clase "general-table-delete". */
+.general-table-delete {
+    background-color: #b11e1e; /* Establece un color de fondo de rojo oscuro (#b11e1e). */
+    padding: 6px; /* Agrega un relleno interior de 6 píxeles a los elementos. */
+    color: #fff; /* Establece el color del texto en blanco. */
+    text-align: center; /* Centra el texto en los elementos. */
+    font-weight: bold; /* Establece el peso de fuente en negrita. */
+}

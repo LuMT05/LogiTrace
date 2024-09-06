@@ -1,0 +1,195 @@
+/* Estilos para el elemento "body". */
+body {
+    margin: 0; /* Margen exterior cero en todas las direcciones. */
+    padding: 0; /* Relleno interior cero en todas las direcciones. */
+    font-family: 'Times New Roman', Times, serif; /* Fuente de texto específica. */
+    background-color: rgb(87, 87, 86); /* Color de fondo con valor RGB. */
+}
+
+/* Estilos para la clase ".LOGO1-login" dentro de un elemento con clase ".formulario". */
+.formulario .LOGO1-login {
+    width: 150px; /* Ancho del elemento de 150 píxeles. */
+    height: 150px; /* Altura del elemento de 150 píxeles. */
+    position: relative; /* Posición relativa para elementos absolutos anidados. */
+    left: 30%; /* Desplazamiento a la izquierda del 30% desde el contenedor padre. */
+    margin: 0; /* Sin margen. */
+}
+
+/* Estilos para la clase ".formulario". */
+.formulario {
+    position: absolute; /* Posición absoluta para este elemento. */
+    top: 50%; /* Posiciona el elemento en el 50% de la altura del contenedor padre. */
+    left: 50%; /* Posiciona el elemento en el 50% del ancho del contenedor padre. */
+    transform: translate(-50%, -50%); /* Centra el elemento horizontal y verticalmente. */
+    width: 400px; /* Ancho del formulario de 400 píxeles. */
+    background-color: rgb(255 200 62); /* Color de fondo con valor RGB. */
+    border-radius: 10px; /* Borde redondeado de 10 píxeles. */
+}
+
+/* Estilos para el encabezado "<h1>" dentro del formulario. */
+.formulario h1 {
+    text-align: center; /* Alineación de texto centrada. */
+    font-size: 36px; /* Tamaño de fuente de 36 píxeles. */
+    color: #000000; /* Color del texto en negro. */
+    text-shadow: 2px 2px 4px #ffffff; /* Sombra de texto con desplazamiento y color blanco. */
+    font-family: 'Cherry Swash', cursive; /* Fuente de texto específica. */
+    border-bottom: 1px solid rgb(87, 87, 86); /* Borde inferior de 1 píxel con valor RGB. */
+}
+
+/* Estilos para el formulario dentro del formulario principal. */
+.formulario form {
+    padding: 0 40px; /* Relleno interior de 0 píxeles en la parte superior e inferior y 40 píxeles en los lados. */
+    box-sizing: border-box; /* Calcula el tamaño en relación a los bordes y el relleno. */
+}
+
+/* Estilos para elementos con clase ".Nombre" dentro del formulario. */
+form .Nombre {
+    position: relative; /* Posición relativa para elementos dentro del formulario. */
+    border-bottom: 2px solid rgb(87, 87, 86); /* Borde inferior de 2 píxeles con valor RGB. */
+    margin: 30px 0; /* Margen de 30 píxeles en la parte superior e inferior, sin margen en los lados. */
+}
+
+/* Estilos para el campo de entrada "input" dentro de elementos con clase ".Nombre". */
+.Nombre input {
+    width: 100%; /* Ancho del campo de entrada del 100%. */
+    padding: 0 5px; /* Relleno interior de 0 píxeles en la parte superior e inferior y 5 píxeles en los lados. */
+    height: 40px; /* Altura del campo de entrada de 40 píxeles. */
+    font-size: 16px; /* Tamaño de fuente de 16 píxeles. */
+    border: none; /* Sin borde. */
+    background: none; /* Fondo transparente. */
+    outline: none; /* Sin contorno. */
+}
+
+/* Estilos para un campo de entrada de nombre de usuario */
+form .username {
+    position: relative; /* Establece la posición relativa para el elemento. */
+    border-bottom: 2px solid rgb(87, 87, 86); /* Agrega un borde inferior de 2 píxeles sólidos con un color específico (verde oscuro). */
+    margin: 30px 0; /* Establece un margen en la parte superior e inferior del campo de entrada. */
+}
+
+/* Estilos para el campo de entrada de nombre de usuario dentro de form .username */
+.username input {
+    width: 100%; /* Establece el ancho del campo de entrada al 100% del contenedor. */
+    padding: 0 5px; /* Agrega relleno de 0 píxeles arriba y abajo y 5 píxeles a los lados del campo de entrada. */
+    height: 40px; /* Establece la altura del campo de entrada en 40 píxeles. */
+    font-size: 16px; /* Establece el tamaño de fuente en 16 píxeles. */
+    border: none; /* Elimina el borde del campo de entrada. */
+    background: none; /* Establece un fondo transparente para el campo de entrada. */
+    outline: none; /* Elimina el borde de enfoque (borde punteado) al hacer clic en el campo. */
+}
+
+/* Estilos para un campo de entrada de contraseña */
+form .contraseña {
+    position: relative; /* Establece la posición relativa para el elemento. */
+    border-bottom: 2px solid rgb(87, 87, 86); /* Agrega un borde inferior de 2 píxeles sólidos con un color específico (verde claro). */
+    margin: 30px 0; /* Establece un margen en la parte superior e inferior del campo de entrada de contraseña. */
+}
+
+/* Estilos para el campo de entrada de contraseña dentro de form .contraseña */
+.contraseña input {
+    width: 100%; /* Establece el ancho del campo de entrada de contraseña al 100% del contenedor. */
+    padding: 0 5px; /* Agrega relleno de 0 píxeles arriba y abajo y 5 píxeles a los lados del campo de entrada de contraseña. */
+    height: 40px; /* Establece la altura del campo de entrada de contraseña en 40 píxeles. */
+    font-size: 16px; /* Establece el tamaño de fuente en 16 píxeles. */
+    border: none; /* Elimina el borde del campo de entrada de contraseña. */
+    background: none; /* Establece un fondo transparente para el campo de entrada de contraseña. */
+    outline: none; /* Elimina el borde de enfoque (borde punteado) al hacer clic en el campo de entrada de contraseña. */
+}
+
+/* Estilos para un campo de entrada de confirmación de contraseña */
+form .Confirm_contraseña {
+    position: relative; /* Establece la posición relativa para el elemento. */
+    border-bottom: 2px solid rgb(87, 87, 86); /* Agrega un borde inferior de 2 píxeles sólidos con un color específico (verde claro). */
+    margin: 30px 0; /* Establece un margen en la parte superior e inferior del campo de entrada de confirmación de contraseña. */
+}
+
+/* Estilos para el campo de entrada de confirmación de contraseña dentro de form .Confirm_contraseña */
+.Confirm_contraseña input {
+    width: 100%; /* Establece el ancho del campo de entrada de confirmación de contraseña al 100% del contenedor. */
+    padding: 0 5px; /* Agrega relleno de 0 píxeles arriba y abajo y 5 píxeles a los lados del campo de entrada de confirmación de contraseña. */
+    height: 40px; /* Establece la altura del campo de entrada de confirmación de contraseña en 40 píxeles. */
+    font-size: 16px; /* Establece el tamaño de fuente en 16 píxeles. */
+    border: none; /* Elimina el borde del campo de entrada de confirmación de contraseña. */
+    background: none; /* Establece un fondo transparente para el campo de entrada de confirmación de contraseña. */
+    outline: none; /* Elimina el borde de enfoque (borde punteado) al hacer clic en el campo de entrada de confirmación de contraseña. */
+}
+
+/* Estilos para un campo de entrada de código */
+form .codigo {
+    position: relative; /* Establece la posición relativa para el elemento. */
+    border-bottom: 2px solid rgb(87, 87, 86); /* Agrega un borde inferior de 2 píxeles sólidos con un color específico (verde claro) al campo de entrada de código. */
+    margin: 30px 0; /* Establece un margen en la parte superior e inferior del campo de entrada de código. */
+}
+
+/* Estilos para el campo de entrada de código dentro de form .codigo */
+.codigo input {
+    width: 100%; /* Establece el ancho del campo de entrada de código al 100% del contenedor. */
+    padding: 0 5px; /* Agrega relleno de 0 píxeles arriba y abajo y 5 píxeles a los lados del campo de entrada de código. */
+    height: 40px; /* Establece la altura del campo de entrada de código en 40 píxeles. */
+    font-size: 16px; /* Establece el tamaño de fuente en 16 píxeles. */
+    border: none; /* Elimina el borde del campo de entrada de código. */
+    background: none; /* Establece un fondo transparente para el campo de entrada de código. */
+    outline: none; /* Elimina el borde de enfoque (borde punteado) al hacer clic en el campo de entrada de código. */
+}
+
+/* Estilos para el botón de tipo "submit" dentro del formulario. */
+button[type="submit"] {
+    width: 100%; /* Ancho del botón del 100%. */
+    height: 50px; /* Altura del botón de 50 píxeles. */
+    border: 1px solid; /* Borde de 1 píxel. */
+    background-color: rgb(87, 87, 86); /* Color de fondo con valor RGB. */
+    border-radius: 25px; /* Borde redondeado de 25 píxeles. */
+    font-size: 18px; /* Tamaño de fuente de 18 píxeles. */
+    color: beige; /* Color del texto en beige. */
+    cursor: pointer; /* Cambio de cursor al pasar sobre el botón. */
+    outline: none; /* Sin contorno. */
+}
+
+/* Estilos para el botón de tipo "submit" cuando se encuentra en estado "hover" (pasando el cursor sobre él). */
+button[type="submit"]:hover {
+    margin: 30px 0; /* Margen de 30 píxeles en la parte superior e inferior. */
+    text-align: center; /* Alineación de texto centrada. */
+    font-size: 16px; /* Tamaño de fuente de 16 píxeles. */
+    color: beige; /* Color del texto en beige. */
+}
+
+/* Estilos para elementos con clase ".ingresar" dentro del formulario. */
+.ingresar a {
+    width: 100%; /* Ancho del elemento del 100%. */
+    height: 50px; /* Altura del elemento de 50 píxeles. */
+    border: 1px solid; /* Borde de 1 píxel. */
+    background-color: rgb(87, 87, 86); /* Color de fondo con valor RGB. */
+    border-radius: 25px; /* Borde redondeado de 25 píxeles. */
+    font-size: 18px; /* Tamaño de fuente de 18 píxeles. */
+    color: beige; /* Color del texto en beige. */
+    cursor: pointer; /* Cambio de cursor al pasar sobre el elemento. */
+    outline: none; /* Sin contorno. */
+}
+
+/* Estilos para elementos con clase ".ingresar" cuando se encuentran en estado "hover". */
+.ingresar a:hover {
+    margin: 30px 0; /* Margen de 30 píxeles en la parte superior e inferior. */
+    text-align: center; /* Alineación de texto centrada. */
+    font-size: 16px; /* Tamaño de fuente de 16 píxeles. */
+    color: beige; /* Color del texto en beige. */
+}
+
+/* Estilos para párrafos "<p>" en el formulario. */
+p {
+    text-align: center; /* Alineación de texto centrada. */
+    margin: 10px 0 10px; /* Margen de 10 píxeles en la parte superior e inferior, sin margen en los lados. */
+    font-size: 15px; /* Tamaño de fuente de 15 píxeles. */
+    color: #ecf0f1; /* Color del texto en una tonalidad específica. */
+    text-shadow: 2px 2px 4px #000000; /* Sombra de texto con desplazamiento y color negro. */
+    font-family: 'Cherry Swash', cursive; /* Fuente de texto específica. */
+}
+
+/* Estilos para elementos con clase ".Registrar". */
+.Registrar {
+    text-align: center; /* Alineación de texto centrada. */
+    margin: 40px 0 40px; /* Margen de 40 píxeles en la parte superior e inferior, sin margen en los lados. */
+    font-size: 16px; /* Tamaño de fuente de 16 píxeles. */
+    color: #ecf0f1; /* Color del texto en una tonalidad específica. */
+    text-shadow: 2px 2px 4px #000000; /* Sombra de texto con desplazamiento y color negro. */
+    font-family: 'Cherry Swash', cursive; /* Fuente de texto específica. */
+}

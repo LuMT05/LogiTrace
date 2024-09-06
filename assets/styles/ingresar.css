@@ -1,0 +1,143 @@
+/* Establece márgenes y relleno en 0, utiliza la fuente Times New Roman y define el color de fondo. */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(87, 87, 86);
+}
+
+/* Estilos para el LOGO1 en el formulario de inicio de sesión. */
+.formulario .LOGO1-login {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 30%; /* Desplaza el LOGO1 al 30% desde la izquierda. */
+    margin: 0; /* Sin márgenes */
+}
+
+/* Estilos para el contenedor del formulario de inicio de sesión. */
+.formulario {
+    position: absolute;
+    top: 50%; /* Lo coloca en la mitad superior del viewport. */
+    left: 50%; /* Lo coloca en el centro del viewport. */
+    transform: translate(-50%, -50%); /* Centra vertical y horizontalmente el formulario. */
+    width: 400px; /* Ancho del formulario de 400 píxeles. */
+    background-color: rgb(255 200 62);
+    border-radius: 10px; /* Borde redondeado con 10 píxeles de radio. */
+}
+
+/* Estilos para el título del formulario. */
+.formulario h1 {
+    text-align: center; /* Centra el texto horizontalmente. */
+    font-size: 36px; /* Tamaño de fuente de 36 píxeles. */
+    color: #000000; /* Color del texto en negro. */
+    text-shadow: 2px 2px 4px #ffffff; /* Sombra de texto con desplazamiento y color. */
+    font-family: 'Cherry Swash', cursive; /* Fuente de texto. */
+    border-bottom: 1px solid rgb(0, 0, 0); /* Línea inferior con color sólido. */
+}
+
+/* Estilos para el formulario dentro del contenedor. */
+.formulario form {
+    padding: 0 40px; /* Relleno horizontal de 0 en la parte superior y 40px en la parte inferior. */
+    box-sizing: border-box; /* Calcula el tamaño en relación a los bordes y el relleno. */
+}
+
+/* Estilos para el campo de nombre de usuario. */
+form .username {
+    position: relative;
+    border-bottom: 2px solid rgb(2, 2, 2);
+    margin: 30px 0; /* Márgenes superior e inferior de 30 píxeles. */
+}
+
+.username input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* Estilos para el campo de contraseña. */
+form .contraseña {
+    position: relative;
+    border-bottom: 2px solid rgb(7, 7, 7);
+    margin: 30px 0; /* Márgenes superior e inferior de 30 píxeles. */
+}
+
+.contraseña input {
+    width: 100%;
+    pad: 0 5px; /* Debería ser "padding" en lugar de "pad". */
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* Estilos para el botón de enviar el formulario. */
+button[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    font-size: 18px;
+    color: beige;
+    cursor: pointer;
+    outline: none;
+}
+
+button[type="submit"]:hover {
+    margin: 30px 0; /* Márgenes superior e inferior de 30 píxeles en el hover. */
+    text-align: center;
+    font-size: 16px;
+    color: beige;
+}
+
+/* Estilos para el botón de "Ingresar como invitado". */
+.ingresar a {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background-color: rgb(131, 98, 79);
+    border-radius: 25px;
+    font-size: 18px;
+    color: beige;
+    cursor: pointer;
+    outline: none;
+}
+
+.ingresar a:hover {
+    margin: 30px 0; /* Márgenes superior e inferior de 30 píxeles en el hover. */
+    text-align: center;
+    font-size: 16px;
+    color: beige;
+}
+
+/* Estilos para los párrafos en el formulario. */
+p {
+    text-align: center; /* Centra el texto horizontalmente. */
+    margin: 10px 0 10px; /* Márgenes superior de 10 píxeles y inferior de 10 píxeles. */
+    text-align: center; /* Centra el texto horizontalmente (repetido). */
+    font-size: 15px; /* Tamaño de fuente de 15 píxeles. */
+    color: #ecf0f1; /* Color del texto. */
+    text-shadow: 2px 2px 4px #000000; /* Sombra de texto con desplazamiento y color. */
+    font-family: 'Cherry Swash', cursive; /* Fuente de texto. */
+}
+
+/* Estilos para el mensaje de registro. */
+.Registrar {
+    text-align: center; /* Centra el texto horizontalmente. */
+    margin: 40px 0 40px; /* Márgenes superior e inferior de 40 píxeles. */
+    text-align: center; /* Centra el texto horizontalmente (repetido). */
+    font-size: 16px; /* Tamaño de fuente de 16 píxeles. */
+    color: #040404; /* Color del texto. */
+    text-shadow: 2px 2px 4px #000000; /* Sombra de texto con desplazamiento y color. */
+    font-family: 'Cherry Swash', cursive; /* Fuente de texto. */
+}
+
+.Registrar a{
+    color: blue; /*COLOR DEL TEXTO DEL LINK REGISTRAR*/
+}

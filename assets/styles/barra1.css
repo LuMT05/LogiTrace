@@ -1,0 +1,20 @@
+
+.container {
+    display: flex; /* Utiliza el modelo de diseño flexbox */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+}
+
+.container img {
+    max-width: 50%; /* Limita el ancho de la imagen al 50% del contenedor */
+}
+
+.titulo{
+    color: rgb(255 200 62);
+}
+
+.container h1 {
+    margin-left: 300px; /* Agrega un margen a la izquierda del título para separarlo de la imagen */
+}
+.header{
+    background-color: rgb(136, 134, 129);
+}

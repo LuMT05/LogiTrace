@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head lang="es" xml:lang="es">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" type="text/css" href="../assets/styles/registrar.css">
+        <link rel="stylesheet" type="text/css" href="../assets/styles/barra1.css">
+        <link rel="icon" type="image/png" href="../assets/img/LOGO1.PNG">
+        <title>Registrar</title>
+    </head>
+<body>
+    <header class="header">
+        <div>
+            <div class="container">
+                <a href=""><img src="../assets/img/escudo1.png" type="image/png"></a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="formulario">
+        <h1>Registrar</h1>
+        <form action="../controllers/usuarios/dbRegistro.php" method="post" accept-charset="utf-8"> <!--El metodo post es para enviar información -->
+            <div class="Nombre">
+                <input type="text" name="input_nombre" placeholder="Nombre Completo" required>
+            </div>
+            <div class="username">
+                <input type="text" name="input_user" placeholder="Usuario" required>
+            </div>
+
+            <div class="contraseña">
+                <input type="password" name="input_contraseña" placeholder="Contraseña" required>
+            </div>
+            <div class="Confirm_contraseña">
+                <input type="password" name="input_ccontraseña" placeholder="Confirmar contraseña" required>
+            </div>
+            <div class="codigo">
+                <input type="password" name="input_code" placeholder="Codigo" required>
+            </div>
+            <div class="ingresar">
+                <div class="ingresar"><button id="boton" type="submit">Crear</button></div>
+            </div>
+        </form>
+    </div>
+</body>
+<footer>
+</footer>
+</html>

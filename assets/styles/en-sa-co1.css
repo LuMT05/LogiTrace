@@ -1,0 +1,148 @@
+/* Establece la imagen de fondo para el cuerpo del sitio y ajusta los estilos de fondo. */
+body {
+    background-color:rgb(87, 87, 86) ; /* Imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que la imagen de fondo sea fija mientras se desplaza el contenido */
+    /* Otros estilos para el cuerpo del sitio */
+}
+
+/* Estilos para elementos con la clase "layout". */
+.layout {
+    width: 100%; /* Ancho del elemento al 100% */
+    display: flex; /* Elemento se muestra como una fila flexible */
+    gap: 16px; /* Espacio entre elementos secundarios de 16 píxeles */
+    justify-content: space-around; /* Distribución de espacio alrededor de elementos secundarios */
+    align-items: center; /* Centra elementos secundarios verticalmente */
+    margin-top: 190px; /* Espacio superior de 190 píxeles */
+}
+
+/* Estilos para los botones. */
+button {
+    width: 200px; /* Ancho del botón de 200 píxeles */
+    height: 70px; /* Altura del botón de 70 píxeles */
+    background: linear-gradient(to left top, rgb(255 200 62) 50%, rgb(255 200 62) 50%); /* Fondo con gradiente */
+    border-style: none; /* Sin borde */
+    color: #000000; /* Color del texto en negro */
+    font-size: 23px; /* Tamaño de fuente de 23 píxeles */
+    letter-spacing: 3px; /* Espaciado entre letras de 3 píxeles */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente del texto */
+    font-weight: 600; /* Grosor de la fuente */
+    outline: none; /* Sin contorno al hacer clic */
+    cursor: pointer; /* Cursor cambia a la mano al pasar sobre el botón */
+    position: relative; /* Posición relativa para elementos internos */
+    padding: 0px; /* Relleno interior de 0 píxeles */
+    overflow: hidden; /* Contenido que se desborda se oculta */
+    transition: all .5s; /* Transición suave en 0.5 segundos para efectos de hover */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .2); /* Sombra ligera */
+}
+
+/* Estilos para los elementos "span" dentro de los botones (para las animaciones). */
+button span {
+    position: absolute; /* Posición absoluta para crear animaciones */
+    display: block; /* Mostrar como bloque */
+}
+
+/* Primer "span" para la animación del borde izquierdo del botón. */
+button span:nth-child(1) {
+    height: 3px; /* Altura de 3 píxeles */
+    width: 200px; /* Ancho de 200 píxeles */
+    top: 0px; /* Posición desde la parte superior de 0 píxeles */
+    left: -200px; /* Posición desde la izquierda de -200 píxeles (fuera del botón) */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #deecda); /* Fondo con gradiente */
+    border-top-right-radius: 1px; /* Borde superior derecho redondeado */
+    border-bottom-right-radius: 1px; /* Borde inferior derecho redondeado */
+    animation: span1 2s linear infinite; /* Animación span1 con duración de 2 segundos y repetición infinita */
+    animation-delay: 1s; /* Retraso de 1 segundo antes de iniciar la animación */
+}
+
+/* Animación span1: mueve el primer "span" de izquierda a derecha. */
+@keyframes span1 {
+    0% {
+        left: -200px; /* Inicio fuera del botón */
+    }
+    100% {
+        left: 200px; /* Final dentro del botón */
+    }
+}
+
+/* Estilos para el segundo "span" (borde superior). */
+button span:nth-child(2) {
+    height: 70px; /* Altura de 70 píxeles */
+    width: 3px; /* Ancho de 3 píxeles */
+    top: -70px; /* Posición desde la parte superior de -70 píxeles (fuera del botón) */
+    right: 0px; /* Posición desde la derecha de 0 píxeles */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #f6e58d); /* Fondo con gradiente */
+    border-bottom-left-radius: 1px; /* Borde inferior izquierdo redondeado */
+    border-bottom-right-radius: 1px; /* Borde inferior derecho redondeado */
+    animation: span2 2s linear infinite; /* Animación span2 con duración de 2 segundos y repetición infinita */
+    animation-delay: 2s; /* Retraso de 2 segundos antes de iniciar la animación */
+}
+
+/* Animación span2: mueve el segundo "span" de arriba a abajo. */
+@keyframes span2 {
+    0% {
+        top: -70px; /* Inicio fuera del botón */
+    }
+    100% {
+        top: 70px; /* Final dentro del botón */
+    }
+}
+
+/* Estilos para el tercer "span" (borde derecho). */
+button span:nth-child(3) {
+    height: 3px; /* Altura de 3 píxeles */
+    width: 200px; /* Ancho de 200 píxeles */
+    right: -200px; /* Posición desde la derecha de -200 píxeles (fuera del botón) */
+    bottom: 0px; /* Posición desde la parte inferior de 0 píxeles */
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), #f6e58d); /* Fondo con gradiente */
+    border-top-left-radius: 1px; /* Borde superior izquierdo redondeado */
+    border-bottom-left-radius: 1px; /* Borde inferior izquierdo redondeado */
+    animation: span3 2s linear infinite; /* Animación span3 con duración de 2 segundos y repetición infinita */
+    animation-delay: 3s; /* Retraso de 3 segundos antes de iniciar la animación */
+}
+
+/* Animación span3: mueve el tercer "span" de derecha a izquierda. */
+@keyframes span3 {
+    0% {
+        right: -200px; /* Inicio fuera del botón */
+    }
+    100% {
+        right: 200px; /* Final dentro del botón */
+    }
+}
+
+/* Estilos para el cuarto "span" (borde inferior). */
+button span:nth-child(4) {
+    height: 70px; /* Altura de 70 píxeles */
+    width: 3px; /* Ancho de 3 píxeles */
+    bottom: -70px; /* Posición desde la parte inferior de -70 píxeles (fuera del botón) */
+    left: 0px; /* Posición desde la izquierda de 0 píxeles */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), #f6e58d); /* Fondo con gradiente */
+    border-top-right-radius: 1px; /* Borde superior derecho redondeado */
+    border-top-left-radius: 1px; /* Borde superior izquierdo redondeado */
+    animation: span4 2s linear infinite; /* Animación span4 con duración de 2 segundos y repetición infinita */
+    animation-delay: 4s; /* Retraso de 4 segundos antes de iniciar la animación */
+}
+
+/* Animación span4: mueve el cuarto "span" de abajo a arriba. */
+@keyframes span4 {
+    0% {
+        bottom: -70px; /* Inicio fuera del botón */
+    }
+    100% {
+        bottom: 70px; /* Final dentro del botón */
+    }
+}
+
+/* Estilos en el hover del botón (efectos de interacción). */
+button:hover {
+    transition: all .5s; /* Transición suave en 0.5 segundos */
+    transform: rotate(-3deg) scale(1.1); /* Rotación y escala del botón al pasar el cursor */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .4); /* Sombra más pronunciada */
+}
+
+/* Pausa las animaciones en los "span" cuando se pasa el cursor sobre el botón. */
+button:hover span {
+    animation-play-state: paused; /* Detiene las animaciones en los "span" */
+}
